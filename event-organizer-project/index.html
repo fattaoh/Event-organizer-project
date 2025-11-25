@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeEvents - Event Organizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container-wide">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>CoffeeEvents</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="event-form.html" class="btn-nav">Create Event</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section - Full Width -->
+    <section class="hero-modern">
+        <div class="hero-overlay">
+            <div class="container-wide">
+                <div class="hero-content-modern">
+                    <span class="hero-badge">Event Organizer Platform</span>
+                    <h1 class="hero-title-modern">Discover Amazing Events Around You</h1>
+                    <p class="hero-subtitle-modern">Find and create memorable experiences with our curated collection of events</p>
+                    <div class="hero-buttons-modern">
+                        <a href="event-list.html" class="btn-hero-main">Explore Events</a>
+                        <a href="event-form.html" class="btn-hero-ghost">Create Event</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container-wide">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" id="totalEvents">0</h3>
+                    <p class="stat-label">Total Events</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" id="totalCategories">0</h3>
+                    <p class="stat-label">Categories</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">100%</h3>
+                    <p class="stat-label">Free Access</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events Section -->
+    <section class="events-section">
+        <div class="container-wide">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title-modern">Latest Events</h2>
+                    <p class="section-subtitle">Discover what's happening</p>
+                </div>
+                <a href="event-list.html" class="link-arrow">View all →</a>
+            </div>
+            
+            <div class="events-grid-modern" id="featuredEvents">
+                <!-- Events will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container-wide">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Create Your Event?</h2>
+                <p class="cta-text">Join our platform and start organizing amazing events today</p>
+                <a href="event-form.html" class="btn-cta">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CoffeeEvents</h3>
+                    <p>Your event organizer platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="event-list.html">Events</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoffeeEvents. Final Project RPL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

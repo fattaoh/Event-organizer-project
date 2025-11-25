@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Event - CoffeeEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>☕ CoffeeEvents</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-list.html" class="active">Events</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="event-form.html" class="btn-primary">+ Tambah Event</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="featured-events">
+        <div class="container">
+            <h2 class="section-title">Semua Event</h2>
+            
+            <!-- Search & Filter Section -->
+            <div class="search-filter-section">
+                <input type="text" 
+                       id="searchInput" 
+                       class="search-box" 
+                       placeholder="🔍 Cari event berdasarkan nama, lokasi, atau kategori...">
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid" id="eventsList">
+                <!-- Events akan dimuat di sini oleh JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <h3>Tidak Ada Event Ditemukan</h3>
+                <p>Coba kata kunci lain atau tambahkan event baru</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CoffeeEvents. Final Project RPL - Event Organizer</p>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/list.js"></script>
+</body>
+</html>
