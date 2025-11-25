@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Event - CoffeeEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container-wide">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>CoffeeEvents</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="event-form.html" class="btn-nav">Create Event</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Event Info Banner -->
+    <section class="register-banner" id="eventBanner">
+        <div class="container">
+            <div class="banner-content">
+                <span class="event-category-badge" id="eventCategory">Loading...</span>
+                <h1 class="banner-title" id="eventTitle">Loading Event...</h1>
+                <div class="banner-meta">
+                    <div class="banner-meta-item">
+                        <span>📅</span>
+                        <span id="eventDate">-</span>
+                    </div>
+                    <div class="banner-meta-item">
+                        <span>📍</span>
+                        <span id="eventLocation">-</span>
+                    </div>
+                    <div class="banner-meta-item">
+                        <span>💰</span>
+                        <span id="eventPrice">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title">Form Pendaftaran</h2>
+                <p style="color: var(--text-gray); margin-bottom: 2rem;">Lengkapi data diri Anda untuk mendaftar event ini</p>
+                
+                <form id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Nama Lengkap *</label>
+                            <input type="text" 
+                                   id="fullName" 
+                                   name="fullName" 
+                                   class="form-control" 
+                                   placeholder="Contoh: John Doe"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   class="form-control" 
+                                   placeholder="contoh@email.com"
+                                   required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">No. Telepon *</label>
+                            <input type="tel" 
+                                   id="phone" 
+                                   name="phone" 
+                                   class="form-control" 
+                                   placeholder="08123456789"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ticketQty">Jumlah Tiket *</label>
+                            <input type="number" 
+                                   id="ticketQty" 
+                                   name="ticketQty" 
+                                   class="form-control" 
+                                   placeholder="1"
+                                   min="1"
+                                   max="10"
+                                   value="1"
+                                   required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Alamat *</label>
+                        <textarea id="address" 
+                                  name="address" 
+                                  class="form-control" 
+                                  placeholder="Alamat lengkap Anda"
+                                  rows="3"
+                                  required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Catatan (Opsional)</label>
+                        <textarea id="notes" 
+                                  name="notes" 
+                                  class="form-control" 
+                                  placeholder="Pesan atau permintaan khusus"
+                                  rows="3"></textarea>
+                    </div>
+
+                    <!-- Summary Section -->
+                    <div class="registration-summary">
+                        <h3>Ringkasan Pendaftaran</h3>
+                        <div class="summary-row">
+                            <span>Harga per Tiket:</span>
+                            <span id="pricePerTicket">Rp 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Jumlah Tiket:</span>
+                            <span id="totalTickets">1</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total Pembayaran:</span>
+                            <span id="totalPrice">Rp 0</span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            ✓ Daftar Sekarang
+                        </button>
+                        <a href="javascript:history.back()" class="btn-secondary">
+                            Batal
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CoffeeEvents</h3>
+                    <p>Your event organizer platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="event-list.html">Events</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoffeeEvents. Final Project RPL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
