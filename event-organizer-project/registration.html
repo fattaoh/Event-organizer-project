@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pendaftaran - CoffeeEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container-wide">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>CoffeeEvents</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="registrations.html" class="active">Registrations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="featured-events">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <h2 class="section-title" style="margin-bottom: 0;">Daftar Pendaftaran</h2>
+                    <p style="color: var(--text-gray); margin-top: 0.5rem;">Semua pendaftaran event yang telah dilakukan</p>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                <div style="background: var(--brown); color: white; padding: 2rem; border-radius: 12px;">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;" id="totalRegistrations">0</h3>
+                    <p style="opacity: 0.9;">Total Pendaftaran</p>
+                </div>
+                <div style="background: var(--brown-light); color: white; padding: 2rem; border-radius: 12px;">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;" id="totalTickets">0</h3>
+                    <p style="opacity: 0.9;">Total Tiket</p>
+                </div>
+                <div style="background: var(--brown-soft); color: white; padding: 2rem; border-radius: 12px;">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 0.5rem;" id="totalRevenue">Rp 0</h3>
+                    <p style="opacity: 0.9;">Total Pendapatan</p>
+                </div>
+            </div>
+
+            <!-- Registrations Table -->
+            <div class="registrations-container">
+                <div class="table-wrapper">
+                    <table class="registrations-table" id="registrationsTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama</th>
+                                <th>Event</th>
+                                <th>Email</th>
+                                <th>Telepon</th>
+                                <th>Tiket</th>
+                                <th>Total</th>
+                                <th>Tanggal</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="registrationsBody">
+                            <!-- Data akan dimuat oleh JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <h3>Belum Ada Pendaftaran</h3>
+                <p>Belum ada yang mendaftar event</p>
+                <a href="event-list.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">
+                    Lihat Event
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container-wide">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CoffeeEvents</h3>
+                    <p>Your event organizer platform</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="event-list.html">Events</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoffeeEvents. Final Project RPL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/registrations-list.js"></script>
+</body>
+</html>
