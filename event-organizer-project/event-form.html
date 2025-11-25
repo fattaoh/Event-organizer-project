@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event - CoffeeEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>☕ CoffeeEvents</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="event-list.html">Events</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="event-form.html" class="btn-primary">+ Tambah Event</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title" id="formTitle">Tambah Event Baru</h2>
+                
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="title">Judul Event *</label>
+                        <input type="text" 
+                               id="title" 
+                               name="title" 
+                               class="form-control" 
+                               placeholder="Contoh: Coffee Festival 2024"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Tanggal Event *</label>
+                        <input type="date" 
+                               id="date" 
+                               name="date" 
+                               class="form-control"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Lokasi *</label>
+                        <input type="text" 
+                               id="location" 
+                               name="location" 
+                               class="form-control" 
+                               placeholder="Contoh: Jakarta Convention Center"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Kategori *</label>
+                        <select id="category" name="category" class="form-control" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="Festival">Festival</option>
+                            <option value="Workshop">Workshop</option>
+                            <option value="Tasting">Tasting</option>
+                            <option value="Konser">Konser</option>
+                            <option value="Seminar">Seminar</option>
+                            <option value="Exhibition">Exhibition</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Harga Tiket (Rp) *</label>
+                        <input type="number" 
+                               id="price" 
+                               name="price" 
+                               class="form-control" 
+                               placeholder="Contoh: 150000"
+                               min="0"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">URL Gambar</label>
+                        <input type="url" 
+                               id="image" 
+                               name="image" 
+                               class="form-control" 
+                               placeholder="https://example.com/image.jpg">
+                        <small style="color: var(--coffee-medium); font-size: 0.9rem;">
+                            Gunakan URL gambar dari Unsplash atau sumber lain
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Deskripsi Event *</label>
+                        <textarea id="description" 
+                                  name="description" 
+                                  class="form-control" 
+                                  placeholder="Jelaskan detail event Anda..."
+                                  required></textarea>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button type="submit" class="btn-submit">
+                            💾 Simpan Event
+                        </button>
+                        <a href="dashboard.html" class="btn-secondary">
+                            Batal
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CoffeeEvents. Final Project RPL - Event Organizer</p>
+        </div>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
