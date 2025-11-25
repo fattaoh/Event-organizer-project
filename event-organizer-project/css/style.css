@@ -751,6 +751,213 @@ textarea.form-control {
     color: var(--brown);
 }
 
+/* === REGISTRATION PAGE === */
+.register-banner {
+    background: linear-gradient(135deg, var(--brown) 0%, var(--brown-soft) 100%);
+    padding: 4rem 0;
+    margin-top: 80px;
+}
+
+.banner-content {
+    max-width: 800px;
+}
+
+.event-category-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.banner-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.banner-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.registration-summary {
+    background-color: var(--gray);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.registration-summary h3 {
+    color: var(--brown);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    color: var(--text-gray);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+}
+
+.summary-row.total {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid var(--brown);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--brown);
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-register {
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+}
+
+.btn-register {
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+}
+
+/* === REGISTRATIONS TABLE === */
+.registrations-container {
+    background-color: var(--white);
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.registrations-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.registrations-table thead {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.registrations-table th {
+    padding: 1.2rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.registrations-table td {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    color: var(--brown);
+}
+
+.registrations-table tbody tr:hover {
+    background-color: var(--gray);
+}
+
+.registrations-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-view-small {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease;
+}
+
+.btn-view-small:hover {
+    opacity: 0.8;
+}
+
+.btn-delete-small {
+    background-color: #D32F2F;
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.btn-delete-small:hover {
+    opacity: 0.8;
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
     .container-wide {
@@ -814,5 +1021,18 @@ textarea.form-control {
 
     .form-container {
         padding: 2rem 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .banner-meta {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
